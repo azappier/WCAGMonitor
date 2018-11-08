@@ -1,0 +1,122 @@
+/** Override material theme **/
+@import "../scss/variables";
+
+/** Tabs **/
+.mat-tab-group{
+ &.mat-primary {
+   .mat-ink-bar {
+     background-color: $green;
+     height: 5px;
+   }
+ }
+  .mat-tab-label{
+    font-size: 14px;
+    font-weight: 600;
+    min-width: auto;
+    &.mat-tab-label-active{
+      color:$green;
+    }
+  }
+}
+
+/** Slide Toggle **/
+.mat-slide-toggle{
+  &.mat-checked{
+    &:not(.mat-disabled){
+      .mat-slide-toggle-bar{
+        background-color: rgba($green,0.5);
+      }
+      .mat-slide-toggle-thumb{
+        background-color: $green;
+      }
+    }
+  }
+  &.white-theme{
+    .mat-slide-toggle-bar{
+      background-color: rgba(255,255,255,0.38);
+    }
+  }
+
+}
+
+/**** SLIDE PANEL **/
+.mat-expansion-panel-spacing{
+  margin: 0 !important;
+}
+
+/** CUSTOM CHECK BOX **/
+.custom-checkbox{
+  &.white{
+    .mat-checkbox-frame {
+      border-color: rgba(255,255,255,1);
+    }
+  }
+  .mat-checkbox-inner-container{
+    height:15px !important;
+    width:15px !important;
+    .mat-checkbox-frame{
+      border-width: 1.5px !important;
+    }
+  }
+  .mat-checkbox-label{
+    color:#000;
+    font-weight:500!important;
+  }
+
+
+  &.mat-checkbox-checked , .mat-checkbox-indeterminate{
+    .mat-checkbox-background{
+      background-color:$green !important;
+    }
+  }
+
+  &.font-small{
+    .mat-checkbox-label{
+      font-size:small;
+    }
+  }
+}
+
+.mat-dialog-container{
+  padding: 0px !important;
+}
+
+.mat-raised-button,.custom-modal-container{
+  &.custom-btn{
+    background: $green;
+    color: $white ;
+    margin:20px auto 20px;
+    font-size: 14px;
+    font-weight:bold;
+    border-radius: 30px;
+    line-height: 50px;
+    box-shadow: none !important;
+    display: block;
+    height: 50px;
+    padding: 0 60px;
+    text-transform: uppercase;
+  }
+
+  &.custom-btn-md{
+    background: $green;
+    color: $white ;
+    font-size: 14px;
+    border-radius: 30px;
+    box-shadow: none !important;
+    text-transform: uppercase;
+  }
+
+  &.reset{
+    background: #ebebec;
+    color: #6c6c6c ;
+    text-transform: uppercase;
+  }
+}
+
+.remove-underline {
+  .mat-form-field-underline {
+    height: 0 !important;
+  }
+}
+
+

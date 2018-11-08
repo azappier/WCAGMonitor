@@ -1,0 +1,24 @@
+<!--Login Page Starts-->
+<section class="login">
+  <div class="login-container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <mat-form-field>
+          <input matInput placeholder="User name">
+        </mat-form-field>
+      </div>
+      <div class="col-12 text-center">
+        <mat-form-field>
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+      <div class="col-12 text-center">
+        <button mat-raised-button [routerLink]="['/forgot-password']" >FORGOT PASSWORD</button>
+      </div>
+      <div class="col-12 text-center pt-2">
+        <button mat-raised-button [routerLink]="['/register']" color="primary">SIGN UP</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Login Page Ends-->
