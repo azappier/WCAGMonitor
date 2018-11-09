@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+@import "../../scss/WCAGStyles";
+
+.logo{
+	width: 100%;
+}
+
+input.form-field{
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+	font-size: $baseFontSize;
+	padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+	box-sizing: border-box;
+	font-family: $bodyFontFamily;
+	outline: none;
+}
+
+.login-container{
+	@include login-page-styles;
+	width: 30%;
+	margin-top: 20vh;
+}
+
+
+
+.form-group{
+	margin: 20px 0;
+	
+}
+.btn-link2{
+		float: right;
+	}
+
+@media only screen and (max-width:800px){
+	.login-container{
+		width:40%;
+		
+	}
+}
+@media only screen and (max-width:420px){
+	.login-container{
+		width:70%;
+		margin-top: 18vh
+	}
+}
+@media only screen and (max-width:320px){
+	.login-container{
+		width:70%;
+		margin-top: 15vh
+	}
+}

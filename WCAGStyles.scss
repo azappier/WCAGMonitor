@@ -1,0 +1,84 @@
+/* Scss Document */
+
+//default overall styles
+@mixin login-page-styles{
+	display: block;
+	margin: auto;
+}
+
+@mixin title-styles{
+	font-family: $titleFontFamily;
+	font-weight: bold;
+}
+
+//font
+
+@import url('https://fonts.googleapis.com/css?family=Hind:400,700|Open+Sans:400,600,700');
+
+//css
+	
+h1{
+	@include title-styles;
+	font-size: 2.45em;
+}
+
+h2{
+	@include title-styles;
+	font-size: 1.6em;
+}
+
+h3{
+	@include title-styles;
+	font-size: 1.5em;
+}
+a, p{
+	font-family: $bodyFontFamily;
+}
+a{
+	color: $blue;
+	padding: 0;
+	margin: 0;
+	text-decoration: underline;
+}
+p{
+	font-size: 16px;
+	font-color: $black;
+}
+
+button{
+	width: 30%;
+	padding: 3px;
+	border-radius: 3px;
+    background-color: $blue;
+    color: #fff;
+    border: none;
+    font-size: $baseFontSize;
+	font-family: $titleFontFamily;
+	border: $buttonBorder;
+	outline: none;
+	
+	&:hover{
+		background-color: $ltblue;
+		transition: 0.3s ease;
+		border: $buttonBorder;
+	}
+}
+
+.btn-secondary {
+    border: $buttonBorder;
+    background-color: transparent;
+    color: $blue;
+    font-weight: bold;
+	outline: none;
+	&:hover{
+		background-color: $lightestBlue;
+		transition: 0.3s ease;
+		border: $buttonBorder;
+	}
+}
+.btn-right{
+	float: right;
+}
+
+
+
